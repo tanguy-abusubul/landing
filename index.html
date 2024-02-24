@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Header Crypto</title>
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+    }
+
+    .navbar {
+        background-color: #333;
+        overflow: hidden;
+    }
+
+    .navbar a {
+        float: left;
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 20px;
+        text-decoration: none;
+        transition: 0.3s;
+    }
+
+    .navbar a:hover {
+        background-color: #ddd;
+        color: black;
+    }
+
+    .navbar a.active {
+        background-color: #666;
+        color: white;
+    }
+
+    .navbar .icon {
+        display: none;
+    }
+
+    @media screen and (max-width: 600px) {
+        .navbar a:not(:first-child) {display: none;}
+        .navbar a.icon {
+            float: right;
+            display: block;
+        }
+    }
+
+    @media screen and (max-width: 600px) {
+        .navbar.responsive {position: relative;}
+        .navbar.responsive .icon {
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+        .navbar.responsive a {
+            float: none;
+            display: block;
+            text-align: left;
+        }
+    }
+</style>
+</head>
+<body>
+
+<div class="navbar" id="myNavbar">
+    <a href="#home" class="active">Accueil</a>
+    <a href="#crypto">Crypto</a>
+    <a href="#nft">NFT</a>
+    <a href="#newsletters">Newsletters</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        ☰
+    </a>
+</div>
+
+<script>
+function myFunction() {
+    var x = document.getElementById("myNavbar");
+    if (x.className === "navbar") {
+        x.className += " responsive";
+    } else {
+        x.className = "navbar";
+    }
+}
+</script>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Token Street</title>
+<style>
+    /* Styles précédents... */
+
+    .news-gallery {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        padding: 20px;
+        background-color: #f4f4f4;
+    }
+
+    .news-item {
+        width: 30%;
+        margin: 10px;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        transition: 0.3s;
+        background-color: white;
+    }
+
+    .news-item:hover {
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    }
+
+    .news-image {
+        width: 100%;
+        height: auto;
+    }
+
+    .news-content {
+        padding: 20px;
+    }
+
+    .news-title {
+        font-size: 18px;
+        color: #007bff;
+        margin-bottom: 15px;
+    }
+
+    .news-text {
+        font-size: 14px;
+        color: #333;
+    }
+
+    /* Responsive layout for the news items */
+    @media (max-width: 1000px) {
+        .news-item {
+            width: 45%;
+        }
+    }
+
+    @media (max-width: 600px) {
+        .news-item {
+            width: 100%;
+        }
+    }
+</style>
+</head>
+<body>
+
+<!-- Header code -->
+
+<div class="news-gallery">
+    <div class="news-item">
+        <img src="images/eth.jpg" alt="" class="news-image">
+        <div class="news-content">
+            <h2 class="news-title">ETHEREUM (ETH) VA-T-IL FRANCHIR LES 3 000 $ CETTE SEMAINE ?1</h2>
+            <p class="news-text">Le prix d'Ethereum (ETH) a connu une croissance fulgurante ces dernières semaines, atteignant un pic de 52 semaines à 2 931 $. La question brûlante sur toutes les lèvres est donc la suivante : la crypto ETH pourrait-elle franchir la barre symbolique des 3 000 $ cette semaine ?</p>
+        </div><!-- Bouton de redirection -->
+        <a href="https://investx.fr/actu-crypto/ethereum-eth-va-t-il-franchir-3000-dollars-cette-semaine/" class="custom-button" target="_blank">Lire Plus sur Ethereum</a>
+        <style>
+            .custom-button {
+                background-color: #000000; /* Couleur de fond */
+                color: white; /* Couleur du texte */
+                padding: 10px 20px; /* Espacement interne */
+                border: none; /* Suppression de la bordure */
+                border-radius: 5px; /* Bords arrondis */
+                text-decoration: none; /* Suppression du soulignement du texte */
+                font-size: 16px; /* Taille du texte */
+                cursor: pointer; /* Change le curseur en main */
+                transition: background-color 0.3s, transform 0.2s; /* Animation douce pour le survol et la pression */
+            }
+        
+            .custom-button:hover {
+                background-color: #000000; /* Couleur de fond au survol */
+            }
+        
+            .custom-button:active {
+                transform: scale(0.98); /* Effet de pression */
+            }
+        </style>
+        
+    </div>
+    <div class="news-item">
+        <img src="images/blackrock.jpg" alt="" class="news-image">
+        <div class="news-content">
+            <h2 class="news-title">L'Influence Croissante de BlackRock sur le Marché des Cryptomonnaies</h2>
+            <p class="news-text">BlackRock a acquis 122 600 Bitcoins en six semaines, démontrant l'intérêt croissant des institutions pour le secteur crypto. Cette initiative souligne le potentiel de croissance des cryptomonnaies et leur intégration croissante dans le système financier traditionnel.</p>
+        </div><!-- Bouton de redirection -->
+        <a href="https://blockchainfrance.net/blackrock-investit-dans-les-cryptomonnaies-quelles-consequences-pour-le-marche/#:~:text=L'implication%20de%20BlackRock%20dans%20le%20monde%20des%20cryptomonnaies%20a,aux%20yeux%20des%20investisseurs%20institutionnels." class="custom-button" target="_blank">Lire Plus sur BlackRock</a>
+        
+        <style>
+            .custom-button {
+                background-color: #000000; /* Couleur de fond */
+                color: white; /* Couleur du texte */
+                padding: 10px 20px; /* Espacement interne */
+                border: none; /* Suppression de la bordure */
+                border-radius: 5px; /* Bords arrondis */
+                text-decoration: none; /* Suppression du soulignement du texte */
+                font-size: 16px; /* Taille du texte */
+                cursor: pointer; /* Change le curseur en main */
+                transition: background-color 0.3s, transform 0.2s; /* Animation douce pour le survol et la pression */
+            }
+        
+            .custom-button:hover {
+                background-color: #000000; /* Couleur de fond au survol */
+            }
+        
+            .custom-button:active {
+                transform: scale(0.98); /* Effet de pression */
+            }
+        </style>
+        
+    </div>
+    <div class="news-item">
+        <img src="images/Vibrant finance.jpg" alt="" class="news-image">
+        <div class="news-content">
+            <h2 class="news-title">L'Ascension Révolutionnaire de Vibrant Finance dans l'Échange DeFi</h2>
+            <p class="news-text">Vibrant Finance innove dans le DeFi via Neon EVM, utilisant Solana pour améliorer l'échange décentralisé. Cette percée promet une révolution dans l'efficacité et la sécurité du DeFi, illustrant l'évolution rapide du secteur des cryptomonnaies vers des solutions plus avancées et accessibles.</p>
+        </div><!-- Bouton de redirection -->
+        <a href="https://fr.investing.com/news/cryptocurrency-news/vibrant-finance-exploite-neon-evm-pour-une-innovation-revolutionnaire-en-matiere-dechange-defi-2320087" class="custom-button" target="_blank">Lire Plus sur Vibrant Finance et Neon EVM</a>
+        
+        <style>
+            .custom-button {
+                background-color: #000000; /* Couleur de fond */
+                color: white; /* Couleur du texte */
+                padding: 10px 20px; /* Espacement interne */
+                border: none; /* Suppression de la bordure */
+                border-radius: 5px; /* Bords arrondis */
+                text-decoration: none; /* Suppression du soulignement du texte */
+                font-size: 16px; /* Taille du texte */
+                cursor: pointer; /* Change le curseur en main */
+                transition: background-color 0.3s, transform 0.2s; /* Animation douce pour le survol et la pression */
+            }
+        
+            .custom-button:hover {
+                background-color: #000000; /* Couleur de fond au survol */
+            }
+        
+            .custom-button:active {
+                transform: scale(0.98); /* Effet de pression */
+            }
+        </style>
+        
+    </div>
+</div>
+
+<!-- Footer code or other content -->
+
+</body>
+</html>
+<!-- Suite du code après la galerie d'articles -->
+
+<div class="feature-article">
+    <div class="article-image">
+        <!-- Remplacez 'path_to_your_image.jpg' par le chemin de votre image -->
+        <img src="images/solana.jpg" alt="Solana Blockchain" style="width:100%; height:auto;">
+    </div>
+    <div class="article-content">
+        <h2>La Révolution Solana : Vers une Nouvelle Ère de la Finance Décentralisée</h2>
+        <p>
+            Dans le monde en constante évolution de la blockchain et des cryptomonnaies, Solana se distingue comme une plateforme révolutionnaire qui promet de redéfinir l'avenir de la finance décentralisée (DeFi). Avec sa capacité à traiter des milliers de transactions par seconde tout en maintenant des frais de transaction extrêmement bas, Solana offre une solution puissante aux limitations de scalabilité rencontrées par les blockchains de première et de deuxième générations.
+        </p>
+        <p>
+            Fondée en 2017 par Anatoly Yakovenko, Solana vise à accélérer la transition vers une blockchain décentralisée en utilisant une combinaison unique de preuve d'histoire (PoH) et de preuve de participation (PoS) dans son protocole de consensus. Cette innovation permet à Solana de supporter un nombre de transactions par seconde comparable à celui des principaux réseaux de paiement mondiaux, ouvrant ainsi la voie à une adoption massive dans des applications allant des jeux et du collectif à la finance et au-delà.
+        </p>
+        <p>
+            <!-- Continuez votre article ici -->
+        </p>
+    </div>
+</div>
+
+<style>
+    .feature-article {
+        display: flex;
+        align-items: flex-start;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .article-image {
+        flex: 1;
+    }
+
+    .article-content {
+        flex: 2;
+        padding: 20px;
+    }
+
+    @media (max-width: 768px) {
+        .feature-article {
+            flex-direction: column;
+        }
+
+        .article-image, .article-content {
+            width: 100%;
+        }
+    }
+</style><!-- Début du Footer -->
+<footer class="site-footer">
+    <div class="footer-content">
+        <a href="#home">Accueil</a>
+        <a href="#about">À Propos</a>
+        <a href="#contact">Contact</a>
+        <a href="#privacy">Politique de Confidentialité</a>
+    </div>
+    <div class="footer-social-media">
+        <a href="#">Facebook</a>
+        <a href="#">Twitter</a>
+        <a href="#">LinkedIn</a>
+    </div>
+    <p class="footer-credits">
+        © 2024 Token Street. Tous droits réservés.
+    </p>
+</footer>
+<style>
+    .site-footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 20px 0;
+        font-family: Arial, sans-serif;
+    }
+
+    .footer-content a, .footer-social-media a {
+        color: white;
+        margin: 0 10px;
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+
+    .footer-content a:hover, .footer-social-media a:hover {
+        color: #007bff;
+    }
+
+    .footer-credits {
+        margin-top: 20px;
+        font-size: 14px;
+    }
+
+    @media screen and (max-width: 600px) {
+        .footer-content, .footer-social-media {
+            display: block;
+            margin-bottom: 10px;
+        }
+    }
+</style>
+<!-- Fin du Footer -->
+
+

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Token Street - Actualités Crypto</title>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" rel="stylesheet" />
+<link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" rel="stylesheet" />
+<style>
+    body {
+        margin: 0;
+        font-family: 'Arial', sans-serif;
+        background-color: #0a3d62; /* Bleu foncé */
+    }
+
+    .navbar {
+        background-color: white;
+        overflow: hidden;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 40px;
+        color: #0a3d62; /* Bleu foncé */
+    }
+
+    .navbar a, .navbar .logo {
+        color: #0a3d62; /* Bleu foncé */
+        text-decoration: none;
+        padding: 8px 16px;
+        font-weight: bold;
+        transition: background-color 0.3s;
+    }
+
+    .navbar a:hover {
+        background-color: #ddd;
+    }
+
+    .crypto-news-gallery {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin-top: 20px;
+    }
+
+    .crypto-news-item {
+        width: 30%;
+        margin: 10px;
+        background-color: white;
+        color: #0a3d62;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        transition: box-shadow 0.3s;
+    }
+
+    .crypto-news-item:hover {
+        box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    }
+
+    .crypto-news-image img {
+        width: 100%;
+        height: auto;
+    }
+
+    .crypto-news-content {
+        padding: 20px;
+    }
+
+    .crypto-news-title {
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    .crypto-news-text {
+        font-size: 14px;
+        font-weight: lighter;
+    }
+
+    @media (max-width: 1000px) {
+        .crypto-news-item {
+            width: 45%;
+        }
+    }
+
+    @media (max-width: 600px) {
+        .crypto-news-item {
+            width: 100%;
+        }
+        .navbar {
+            flex-direction: column;
+        }
+    }
+</style>
+</head>
+<body>
+
+<div class="navbar">
+    <div class="logo">Token Street</div>
+    <div class="menu">
+        <a href="#home">Accueil</a>
+        <a href="#crypto">Crypto</a>
+        <a href="#nft">NFT</a>
+        <a href="#newsletters">Newsletters</a>
+    </div>
+</div>
+
+<div class="crypto-news-gallery">
+    <!-- Article 1 -->
+    <div class="crypto-news-item">
+        <div class="crypto-news-image">
+            <img src="path-to-your-image-1.jpg" alt="Bitcoin atteint un nouveau sommet historique">
+        </div>
+        <div class="crypto-news-content">
+            <h2 class="crypto-news-title">Bitcoin atteint un nouveau sommet historique</h2>
+            <p class="crypto-news-text">Le Bitcoin a dépassé la barre des 60 000 $, atteignant un sommet historique. Les analystes attribuent cette hausse à l'adoption croissante par les investisseurs institutionnels.</p>
+        </div>
+    </div>
+
+    <!-- Article 2 -->
+    <div class="crypto-news-item">
+        <div class="crypto-news-image">
+            <img src="path-to-your-image-2.jpg" alt="Ethereum 2.0 - Quelles promesses?">
+        </div>
+        <div class="crypto-news-content">
+            <h2 class="crypto-news-title">Ethereum 2.0 - Quelles promesses?</h2>
+            <p class="crypto-news-text">Ethereum 2.0 se rapproche, promettant d'améliorer considérablement la scalabilité, la sécurité et la durabilité de la blockchain. Quels impacts pour les développeurs et les investisseurs?</p>
+        </div>
+    </div>
+
+    <!-- Article 3 -->
+    <div class="crypto-news-item">
+        <div class="crypto-news-image">
+            <img src="path-to-your-image-3.jpg" alt="Les NFT révolutionnent l'art numérique">
+        </div>
+        <div class="crypto-news-content">
+            <h2 class="crypto-news-title">Les NFT révolutionnent l'art numérique</h2>
+            <p class="crypto-news-text">Les jetons non fongibles (NFT) gagnent en popularité, transformant le marché de l'art numérique et offrant aux artistes une nouvelle façon de monétiser leur travail.</p>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $('.crypto-news-gallery').slick({
+            infinite: true,
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            responsive: [
+                {
+                    breakpoint: 1000,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2,
+                    }
+                },
+                {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                    }
+                }
+            ]
+        });
+    });
+</script>
+
+</body>
+</html>
